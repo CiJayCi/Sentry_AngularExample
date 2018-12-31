@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'sentryAngularExample';
+  title = 'Sentry Error App';
+  
+  throwError(event) {
+	  event.preventDefault();
+	  throw new Error('Error thrown.');
+  }
 }
